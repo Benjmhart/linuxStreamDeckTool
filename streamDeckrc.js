@@ -6,12 +6,15 @@ const path = require('path');
 const robo = require('robotjs');
 const iohook = require('iohook');
 
+// robo can be used to automate keystrokes, mousemovement etc.
+// iohook can listen for other keyboard behaviours.
+
 module.exports = {
   folders: {
     root: [
       {
         id: 0,
-        image: path.resolve(__dirname, 'baseline-power_settings_new-24px.svg'),
+        image: path.resolve(__dirname, './images/baseline-power_settings_new-24px.svg'),
         func: settings => (deck, key) => {
           settings.brightness ? deck.setBrightness(0) : deck.setBrightness(100);
           settings.brightness = !settings.brightness;
