@@ -3,7 +3,6 @@
 
 // also curry
 const path = require('path');
-const robo = require('robotjs');
 const iohook = require('iohook');
 
 // robo can be used to automate keystrokes, mousemovement etc.
@@ -19,6 +18,11 @@ module.exports = {
           settings.brightness ? deck.setBrightness(0) : deck.setBrightness(100);
           settings.brightness = !settings.brightness;
         }
+      },
+      {
+        id: 1,
+        image: path.resolve(__dirname, './images/ic_featured_play_list_48px.svg'),
+        actions: ['end', 'enter', ':console.log()', 'left']
       }
     ]
   }

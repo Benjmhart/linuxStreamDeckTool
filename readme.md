@@ -18,4 +18,5 @@ this is a basic system to create automation with Streamdeck in Linux. currently,
 - distribute via npm
 - distribute as executable
 - distribute via apt install
+- babel setup - optional chaining feature
 - allow config file path to be passed as an argument
