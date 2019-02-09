@@ -14,12 +14,12 @@ module.exports = {
       {
         id: 0,
         image: '/home/bhart/projects/streamDeck/images/baseline-power_settings_new-24px.svg',
-        settings: 'toggleBrightness'
+        actions: [{ settings: 'toggleBrightness' }]
       },
       {
         id: 1,
         image: '/home/bhart/projects/streamDeck/images/ic_featured_play_list_48px.svg',
-        actions: ['end', 'enter', ':console.log()', 'left']
+        actions: [{ keyTap: 'end' }, { keyTap: 'enter' }, { typeString: 'console.log()' }, { keyTap: 'left' }]
       }
     ]
   }

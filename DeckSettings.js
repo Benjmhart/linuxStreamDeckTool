@@ -2,7 +2,7 @@
 
 module.exports = class DeckSettings {
   constructor(config, streamDeck) {
-    this.streamdeck = streamDeck;
+    this.streamDeck = streamDeck;
     this.brightness = true;
     this.state = { folder: 'root' };
     this.folders = {};

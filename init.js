@@ -4,6 +4,8 @@ const config = require('./streamDeckrc.js');
 
 const robo = require('robotjs');
 
+const executeAction = require('./executeAction');
+
 const init = () => {
   const sd = new StreamDeck();
   const settings = new DeckSettings(config, sd);
@@ -12,16 +14,7 @@ const init = () => {
     console.log('key %d down', keyIndex);
     const key = settings.findButton(keyIndex);
     key && key.func && key.func(sd, key);
-    key &&
-      key.actions &&
-      key.actions.forEach(action => {
-        if (action.charAt(0) === ':') {
-          console.log('ToType: ', action.substr(1));
-          return robo.typeString(action.substr(1));
-        }
-        console.log('keytap: ', action);
-        robo.keyTap(action);
-      });
+    key && key.actions && key.actions.forEach(action => executeAction(action, settings));
   });
 
   sd.on('error', error => {
