@@ -13,7 +13,7 @@ const robo = require('robotjs');
 // Device paths can be obtained via node-hid: https://github.com/node-hid/node-hid
 
 const sd = new StreamDeck();
-const settings = new DeckSettings(config);
+const settings = new DeckSettings(config, sd);
 
 sd.on('down', keyIndex => {
   console.log('key %d down', keyIndex);

@@ -13,15 +13,12 @@ module.exports = {
     root: [
       {
         id: 0,
-        image: path.resolve(__dirname, './images/baseline-power_settings_new-24px.svg'),
-        func: settings => (deck, key) => {
-          settings.brightness ? deck.setBrightness(0) : deck.setBrightness(100);
-          settings.brightness = !settings.brightness;
-        }
+        image: '/home/bhart/projects/streamDeck/images/baseline-power_settings_new-24px.svg',
+        settings: 'toggleBrightness'
       },
       {
         id: 1,
-        image: path.resolve(__dirname, './images/ic_featured_play_list_48px.svg'),
+        image: '/home/bhart/projects/streamDeck/images/ic_featured_play_list_48px.svg',
         actions: ['end', 'enter', ':console.log()', 'left']
       }
     ]

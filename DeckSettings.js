@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = class DeckSettings {
-  constructor(config) {
+  constructor(config, streamDeck) {
+    this.streamdeck = streamDeck;
     this.brightness = true;
     this.state = { folder: 'root' };
     this.folders = {};
@@ -18,10 +19,6 @@ module.exports = class DeckSettings {
       }
 
       Object.entries(configBtn).forEach(([key, value]) => {
-        if (typeof value !== 'function') {
-          newBtn[key] = value;
-          return;
-        }
         newBtn[key] = value(this);
       });
       return newBtn;
@@ -34,5 +31,10 @@ module.exports = class DeckSettings {
 
   getButtonArray() {
     return this.folders.root;
+  }
+
+  toggleBrightness() {
+    this.brightness ? this.streamDeck.setBrightness(0) : this.streamDeck.setBrightness(100);
+    this.brightness = !this.brightness;
   }
 };

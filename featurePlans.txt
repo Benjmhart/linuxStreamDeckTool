@@ -1,0 +1,14 @@
+...each item in an action array should be an object
+//button
+{
+  id: 0,
+  image: path.resolve(__dirname, './images/baseline-power_settings_new-24px.svg'),// this should be absolute path only
+  action: {
+    tapKey: "enter" // tap this depending
+    toggleKey: "enter" // toggle this 
+    text: "type this"
+    settings: "settingsCommand"
+    folderLink:"folderName"
+  }
+}
+move settings Command(like device brightness) to a library or method.
