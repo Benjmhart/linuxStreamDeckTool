@@ -19,7 +19,7 @@ module.exports = class DeckSettings {
       }
 
       Object.entries(configBtn).forEach(([key, value]) => {
-        newBtn[key] = value(this);
+        newBtn[key] = value;
       });
       return newBtn;
     });

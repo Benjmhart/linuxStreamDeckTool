@@ -14,6 +14,8 @@
     "iohook": "^0.3.1",
     "nodemon": "^1.18.9",
     "robotjs": "^0.5.1",
-    "sharp": "^0.21.3"
+    "sharp": "^0.21.3",
+    "terminate": "^2.1.2",
+    "usb-detection": "^4.1.0"
   }
 }
