@@ -3,12 +3,12 @@
     "root": [
       {
         "id": 0,
-        "image": "/home/bhart/projects/streamDeck/images/baseline-power_settings_new-24px.svg",
+        "image": "/home/bhart/projects/streamDeck/tmp/images/baseline-power_settings_new-24px.svg",
         "actions": [{ "settings": "toggleBrightness" }]
       },
       {
         "id": 1,
-        "image": "/home/bhart/projects/streamDeck/images/ic_featured_play_list_48px.svg",
+        "image": "/home/bhart/projects/streamDeck/tmp/images/ic_featured_play_list_48px.svg",
         "actions": [
           { "keyTap": "end" },
           { "keyTap": "enter" },
