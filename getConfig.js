@@ -23,9 +23,13 @@ const getConfig = (pathIndex = 0) => {
     const maybeConfig = require(paths[pathIndex]);
     if (maybeConfig) {
       config = maybeConfig;
+      console.log("config found at: ", paths[pathIndex]);
     }
   } catch (err) {
-    console.log("error during config search", err.message);
+    console.log(
+      "warning during config search",
+      err.message
+    );
   }
   if (config) {
     return config;
@@ -34,6 +38,7 @@ const getConfig = (pathIndex = 0) => {
   if (paths[pathIndex + 1]) {
     return getConfig(pathIndex + 1);
   }
+  console.log("unable to locate config file");
   return process.exit();
 };
 

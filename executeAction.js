@@ -1,7 +1,6 @@
 const robo = require("robotjs");
 
 executeAction = (action, settings) => {
-  console.log("running executeAction", action);
   action.keyTap && robo.keyTap(action.keyTap);
   action.typeString && robo.typeString(action.typeString);
   action.keyToggle && robo.keyToggle(...action.keyToggle);
