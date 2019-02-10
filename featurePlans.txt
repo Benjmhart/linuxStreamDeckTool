@@ -5,11 +5,13 @@
   image: path.resolve(__dirname, './images/baseline-power_settings_new-24px.svg'),// this should be absolute path only
   action: {
     keyTap: "enter" // tap this depending
-    keyToggle: "enter" // toggle this 
+    keyToggle: ["enter", "down", []] // toggle this 
     typeString: "type this"
     settings: "settingsCommand"
     folderLink:"folderName"
+    macro: "string" // reference to a saved macro in the config
   }
 }
 move settings Command(like device brightness) to a library or method.
-undefined
+
+console.log()

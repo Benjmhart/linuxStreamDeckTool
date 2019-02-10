@@ -12,11 +12,12 @@ this is a basic system to create automation with Streamdeck in Linux. currently,
 
 ## readmap
 
-- support folder structure buttons
 - allow button to hold an encoded action and folder so that settings can be a JSON file
+- allow json file to be located in app directory, home directory, or /.local/share
 - work with npm link, figure out how to make it not require sudo
 - distribute via npm
 - distribute as executable
 - distribute via apt install
 - babel setup - optional chaining feature
+- linting, tests?
 - allow config file path to be passed as an argument
