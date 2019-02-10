@@ -61,9 +61,8 @@
     ],
     "openLine": [
       { "keyTap": "end" },
-      { "keyTap": "enter" },
-      { "keyTap": "enter" },
-      { "keyTap": "up" }
+      { "keyTap": "end" },
+      { "keyTap": "enter" }
     ]
   }
 }
