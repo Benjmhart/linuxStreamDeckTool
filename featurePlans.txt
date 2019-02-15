@@ -1,17 +1,1 @@
-...each item in an action array should be an object
-//button
-{
-  id: 0,
-  image: path.resolve(__dirname, './images/baseline-power_settings_new-24px.svg'),// this should be absolute path only
-  action: {
-    keyTap: "enter" // tap this depending
-    keyToggle: ["enter", "down", []] // toggle this 
-    typeString: "type this"
-    settings: "settingsCommand"
-    folderLink:"folderName"
-    macro: "string" // reference to a saved macro in the config
-  }
-}
-move settings Command(like device brightness) to a library or method.
-
-console.log()
+...process switcher

@@ -21,6 +21,10 @@ configuration is a JSON file with the following shape:
 }
 ```
 
+## build notes
+
+due to a dependancy issue, this project requires node 8.15
+
 ### Folders
 
 the default folder is root, you should always have a root folder, each folder is an array of buttons. note: if you create a folder other than root, it is highly recommended that one of the buttons in that folder contain a link back to the root folder. see the example streamDeckrc.json file below for details
